@@ -41,6 +41,8 @@ Ext.define('Packt.Application', {
     
     launch: function () {
         // TODO - Launch the application
+        Ext.tip.QuickTipManager.init();
+        
         var me = this;
         var task = new Ext.util.DelayedTask(function(){
             // Fade out the body mask
